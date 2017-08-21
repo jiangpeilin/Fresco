@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hxl.lianwang.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/my_image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        fresco:roundAsCircle="false"
+        fresco:roundedCornerRadius="20dp"
+        fresco:placeholderImage="@mipmap/ic_launcher" />
+    <!--fresco:actualImageScaleType="focusCrop"// 图片的缩放方式.
+             fresco:backgroundImage="@color/blue" //背景图.不支持缩放.XML仅能指定一张背景图.如果使用Java代码指定的话,可以指定多个背景,显示方式类似FrameLayout,多个背景图按照顺序一级一级层叠上去.
+             fresco:fadeDuration="300" // 渐显图片的时间
+             fresco:failureImage="@drawable/error" // 图片加载失败显示的图片
+             fresco:failureImageScaleType="centerInside" //// 图片加载失败显示的图片的缩放类型
+             fresco:overlayImage="@drawable/watermark" // 层叠图,最后叠加在图片之上.不支持缩放.XML仅能指定一张.如果使用Java代码指定的话,可以指定多个,显示方式类似FrameLayout,多个图按照顺序一级一级层叠上去.
+             fresco:placeholderImage="@color/wait_color"  // 图片加载成功之前显示的占位图
+             fresco:placeholderImageScaleType="fitCenter" // 图片加载成功之前显示的占位图的缩放类型
+             fresco:pressedStateOverlayImage="@color/red" // 设置按压状态下的层叠图.不支持缩放.
+             fresco:progressBarAutoRotateInterval="1000" // 进度条图片旋转显示时长
+             fresco:progressBarImage="@drawable/progress_bar" // 进度条图片
+             fresco:progressBarImageScaleType="centerInside" //进度条图片的缩放类型
+             fresco:retryImage="@drawable/retrying" // 当图片加载失败的时候,显示该图片提示用户点击重新加载图片
+             fresco:retryImageScaleType="centerCrop" // 提示图片的缩放类型
+             fresco:roundAsCircle="false" // 显示圆形图片
+             fresco:roundBottomLeft="false" // roundedCornerRadius属性设置后,四个角都会有圆角,如果左下角不需要设置为false.
+             fresco:roundBottomRight="true" // roundedCornerRadius属性设置后,四个角都会有圆角,如果右下角不需要设置为false.
+             fresco:roundTopLeft="true" // roundedCornerRadius属性设置后,四个角都会有圆角,如果左上角不需要设置为false.
+             fresco:roundTopRight="false" // roundedCornerRadius属性设置后,四个角都会有圆角,如果右上角不需要设置为false.
+             fresco:roundWithOverlayColor="@color/corner_color" // 设置图片圆角后空出区域的颜色.如示例图中的红色部分
+             fresco:roundedCornerRadius="1dp" // 设置图片圆角角度,设置该属性后四个角都会生效
+             fresco:roundingBorderColor="@color/border_color" // 设置圆角后,边框的颜色.
+             fresco:roundingBorderWidth="2dp" /> // 设置圆角后,外边框的宽高-->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/my_image_view1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        fresco:roundAsCircle="false"
+        fresco:roundedCornerRadius="20dp"
+        fresco:placeholderImage="@mipmap/ic_launcher" />
+</LinearLayout>
